@@ -166,7 +166,29 @@
                                 @foreach($products as $product)
                                     <div class="col-lg-4 col-md-6 col-12">
                                         <div class="single-product">
-                                            <div class="product-img">
+                                            @if($product->stock < 1)
+                                            <div class="product-img ">
+                                                <a href="{{route('product-detail',$product->slug)}}">
+                                                    @php
+                                                        $photo=explode(',',$product->photo);
+                                                    @endphp
+                                                    <img class="default-img " src="{{$photo[0]}}" alt="{{$photo[0]}}">
+                                                    <img class="hover-img " src="{{$photo[0]}}" alt="{{$photo[0]}}">
+                                                    <span class="price-dec " style="background-color: red; padding: 1px 25px;">Out of Stock</span>
+                                                   
+                                                </a>
+                                                <div class="button-head">
+                                                    <div class="product-action">
+                                                    <a data-toggle="modal" data-target="#{{$product->id}}" title="Quick View" href="#"><i class=" ti-na"></i><span>Out of Stock</span></a>
+                                                        <a title="Wishlist" href="{{route('add-to-wishlist',$product->slug)}}" class="wishlist" data-id="{{$product->id}}"><i class=" ti-heart "></i><span>Add to Wishlist</span></a>
+                                                    </div>
+                                                    <div class="product-action-2">
+                                                        <a title="Out of stock" href="#" class="text-danger">Currently Unavailable</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            @else
+                                            <div class="product-img content">
                                                 <a href="{{route('product-detail',$product->slug)}}">
                                                     @php
                                                         $photo=explode(',',$product->photo);
@@ -187,6 +209,7 @@
                                                     </div>
                                                 </div>
                                             </div>
+                                            @endif
                                             <div class="product-content">
                                                 <h3><a href="{{route('product-detail',$product->slug)}}">{{$product->title}}</a></h3>
                                                 @php
@@ -348,10 +371,17 @@
                                                     </div>
                                                     <!--/ End Input Order -->
                                                 </div>
+                                                @if($product->stock< 1)
+                                                <div class="add-to-cart">
+                                                    <button type="submit" class="btn" disabled>Out of Stock</button>
+                                                    <a href="#" class="btn min"><i class="ti-heart"></i></a>
+                                                </div>
+                                                @else
                                                 <div class="add-to-cart">
                                                     <button type="submit" class="btn">Add to cart</button>
                                                     <a href="{{route('add-to-wishlist',$product->slug)}}" class="btn min"><i class="ti-heart"></i></a>
                                                 </div>
+                                                @endif
                                             </form>
                                             <div class="default-social">
                                             <!-- ShareThis BEGIN --><div class="sharethis-inline-share-buttons"></div><!-- ShareThis END -->
@@ -373,6 +403,7 @@
     .pagination{
         display:inline-flex;
     }
+
     .filter_button{
         /* height:20px; */
         text-align: center;
@@ -381,6 +412,7 @@
         margin-top:10px;
         color: white;
     }
+
 </style>
 @endpush
 @push('scripts')

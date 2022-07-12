@@ -185,24 +185,47 @@
 											<div class="row">
 												<div class="col-lg-4 col-md-6 col-sm-6">
 													<div class="single-product">
-														<div class="product-img">
-															<a href="{{route('product-detail',$product->slug)}}">
-															@php 
-																$photo=explode(',',$product->photo);
-															@endphp
-															<img class="default-img" src="{{$photo[0]}}" alt="{{$photo[0]}}">
-															<img class="hover-img" src="{{$photo[0]}}" alt="{{$photo[0]}}">
-															</a>
-															<div class="button-head">
-																<div class="product-action">
-																	<a data-toggle="modal" data-target="#{{$product->id}}" title="Quick View" href="#"><i class=" ti-eye"></i><span>Quick Shop</span></a>
-																	<a title="Wishlist" href="{{route('add-to-wishlist',$product->slug)}}" class="wishlist" data-id="{{$product->id}}"><i class=" ti-heart "></i><span>Add to Wishlist</span></a>
-																</div>
-																<div class="product-action-2">
-																	<a title="Add to cart" href="{{route('add-to-cart',$product->slug)}}">Add to cart</a>
-																</div>
+													@if($product->stock < 1)
+													<div class="product-img">
+														<a href="{{route('product-detail',$product->slug)}}">
+														@php 
+															$photo=explode(',',$product->photo);
+														@endphp
+														<img class="default-img" src="{{$photo[0]}}" alt="{{$photo[0]}}">
+														<img class="hover-img" src="{{$photo[0]}}" alt="{{$photo[0]}}">
+														<span class="price-dec " style="background-color: red; padding: 1px 75px;border-radius: 5px; top: 50%;">Out of Stock</span>
+														</a>
+														<div class="button-head">
+															<div class="product-action">
+															<a data-toggle="modal" data-target="#{{$product->id}}" title="Quick View" href="#"><i class=" ti-na"></i><span>Out of Stock</span></a>
+																<a title="Wishlist" href="{{route('add-to-wishlist',$product->slug)}}" class="wishlist" data-id="{{$product->id}}"><i class=" ti-heart "></i><span>Add to Wishlist</span></a>
+															</div>
+															<div class="product-action-2">
+																<a title="Out of stock" href="#" class="text-danger">Currently Unavailable</a>
 															</div>
 														</div>
+													</div>
+													@else
+													<div class="product-img">
+														<a href="{{route('product-detail',$product->slug)}}">
+														@php 
+															$photo=explode(',',$product->photo);
+														@endphp
+														<img class="default-img" src="{{$photo[0]}}" alt="{{$photo[0]}}">
+														<img class="hover-img" src="{{$photo[0]}}" alt="{{$photo[0]}}">
+														</a>
+														<div class="button-head">
+															<div class="product-action">
+																<a data-toggle="modal" data-target="#{{$product->id}}" title="Quick View" href="#"><i class=" ti-eye"></i><span>Quick Shop</span></a>
+																<a title="Wishlist" href="{{route('add-to-wishlist',$product->slug)}}" class="wishlist" data-id="{{$product->id}}"><i class=" ti-heart "></i><span>Add to Wishlist</span></a>
+															</div>
+															<div class="product-action-2">
+																<a title="Add to cart" href="{{route('add-to-cart',$product->slug)}}">Add to cart</a>
+															</div>
+														</div>
+													</div>
+													@endif
+
 													</div>
 												</div>
 												<div class="col-lg-8 col-md-6 col-12">

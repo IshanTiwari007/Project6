@@ -422,5 +422,8 @@ class FrontendController extends Controller
                 return back();
             }
     }
+    public function policy(){
+        return view('frontend.pages.policy');
+    }
     
 }

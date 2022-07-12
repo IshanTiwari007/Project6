@@ -26,7 +26,7 @@
 							<ul>
 								<li><a href="{{route('about-us')}}">About Us</a></li>
 								<li><a href="#">Faq</a></li>
-								<li><a href="#">Terms & Conditions</a></li>
+								<li><a href="{{route('policy')}}">Privacy Policy</a></li>
 								<li><a href="{{route('contact')}}">Contact Us</a></li>
 								<li><a href="#">Help</a></li>
 							</ul>
@@ -42,7 +42,6 @@
 								<li><a href="#">Money-back</a></li>
 								<li><a href="#">Returns</a></li>
 								<li><a href="#">Shipping</a></li>
-								<li><a href="#">Privacy Policy</a></li>
 							</ul>
 						</div>
 						<!-- End Single Widget -->
@@ -74,7 +73,7 @@
 					<div class="row">
 						<div class="col-lg-6 col-12">
 							<div class="left">
-								<p>Copyright © {{date('Y')}} <a href="https://github.com/IshanTiwari007" target="_blank">Ishan Tiwari</a>  -  All Rights Reserved.</p>
+								<p>Copyright © {{date('Y')}} <a href="https://imphi.net/" target="_blank">www.Imphi.net</a>  -  All Rights Reserved.</p>
 							</div>
 						</div>
 						<div class="col-lg-6 col-12">

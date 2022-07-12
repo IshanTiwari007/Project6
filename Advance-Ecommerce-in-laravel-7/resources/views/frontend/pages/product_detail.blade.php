@@ -138,10 +138,17 @@
 														</div>
 													<!--/ End Input Order -->
 													</div>
+													@if($product_detail->stock < 1)
+													<div class="add-to-cart mt-4">
+														<button type="submit" class="btn text-danger" disabled>Out Of Stock</button>
+														<a href="#" class="btn min"><i class="ti-heart"></i></a>
+													</div>
+													@else
 													<div class="add-to-cart mt-4">
 														<button type="submit" class="btn">Add to cart</button>
 														<a href="{{route('add-to-wishlist',$product_detail->slug)}}" class="btn min"><i class="ti-heart"></i></a>
 													</div>
+													@endif
 												</form>
 
 												<p class="cat">Category :<a href="{{route('product-cat',$product_detail->cat_info['slug'])}}">{{$product_detail->cat_info['title']}}</a></p>
