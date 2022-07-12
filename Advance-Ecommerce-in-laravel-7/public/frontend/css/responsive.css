@@ -365,7 +365,7 @@ Version:1.0
 	position: absolute;
 	position: relative;
 	padding-bottom: 20px;
-	background: #333;
+	background: #003d8b;
 }
 .slicknav_menu{
 	display:block;
@@ -395,7 +395,7 @@ Version:1.0
 }
 .slicknav_nav li a{
 	margin: 0;
-	color: #333;
+	color: #003d8b;
 	background: transparent;
 	overflow: hidden;
 }
@@ -403,7 +403,7 @@ Version:1.0
 	display:none;
 }
 .slicknav_nav li:hover a{
-	color:#F7941D;
+	color:#68dfe7;
 	background:transparent;
 }
 .slicknav_nav li:hover{
@@ -417,7 +417,7 @@ Version:1.0
 	background:transparent;
 }
 .slicknav_nav li .dropdown li a:hover{
-	color:#F7941D;
+	color:#68dfe7;
 	background:transparent;
 }
 .slicknav_nav li .slicknav_item{
@@ -433,12 +433,12 @@ Version:1.0
 	padding-bottom:0px;
 }
 .slicknav_menu .slicknav_icon-bar {
-	background-color: #F7941D;
+	background-color: #68dfe7;
 	box-shadow: none;
 	text-shadow: none;
 }
 .slicknav_nav .slicknav_arrow{
-	color:#F7941D;
+	color:#68dfe7;
 }
 .slicknav_menu .slicknav_icon-bar {
 	display: block;
@@ -540,7 +540,7 @@ Version:1.0
 	margin-bottom: 0;
 }
 .hero-slider .hero-text p {
-	color: #333;
+	color: #003d8b;
 	margin-bottom: 28px;
 }
 .hero-slider .hero-text .btn {
@@ -615,7 +615,7 @@ Version:1.0
 }
 .hero-area4 .big-content .des {
 	font-size: 13px;
-	color: #333;
+	color: #003d8b;
 	line-height: 21px;
 }
 .hero-area4 .big-content .button {
@@ -630,7 +630,7 @@ Version:1.0
 	width: 35px;
 	line-height: 32px;
 	font-size: 11px;
-	background:#3336;
+	background:#003d8b;
 }
 .hero-area4 .owl-carousel .owl-nav {
 	margin-top: -16px;
@@ -884,7 +884,7 @@ Version:1.0
 	width: 50%;
 	height: 100%;
 	border-bottom: 1px solid #e6ebee;
-	background: #F7941D;
+	background: #68dfe7;
 	color: #fff;
 	border: none;
 }
@@ -995,7 +995,7 @@ Version:1.0
 	margin-bottom: 10px;
 	font-size: 14px;
 	font-weight: 300;
-	color:#333;
+	color:#003d8b;
 }
 .about-us .about-content .button {
 	margin-top: 30px;
@@ -1078,7 +1078,7 @@ Version:1.0
 	position: absolute;
 	position: relative;
 	padding-bottom: 20px;
-	background: #333;
+	background: #003d8b;
 }
 .slicknav_menu{
 	display:block;
@@ -1108,7 +1108,7 @@ Version:1.0
 }
 .slicknav_nav li a{
 	margin: 0;
-	color: #333;
+	color: #003d8b;
 	background: transparent;
 	overflow: hidden;
 }
@@ -1116,7 +1116,7 @@ Version:1.0
 	display:none;
 }
 .slicknav_nav li:hover a{
-	color:#F7941D;
+	color:#68dfe7;
 	background:transparent;
 }
 .slicknav_nav li:hover{
@@ -1130,7 +1130,7 @@ Version:1.0
 	background:transparent;
 }
 .slicknav_nav li .dropdown li a:hover{
-	color:#F7941D;
+	color:#68dfe7;
 	background:transparent;
 }
 .slicknav_nav li .slicknav_item{
@@ -1146,12 +1146,12 @@ Version:1.0
 	padding-bottom:0px;
 }
 .slicknav_menu .slicknav_icon-bar {
-	background-color: #F7941D;
+	background-color: #68dfe7;
 	box-shadow: none;
 	text-shadow: none;
 }
 .slicknav_nav .slicknav_arrow{
-	color:#F7941D;
+	color:#68dfe7;
 }
 .slicknav_menu .slicknav_icon-bar {
 	display: block;
@@ -1221,14 +1221,14 @@ Version:1.0
 	padding: 5px 0;
 	border-bottom: 1px solid #eee;
 	text-align: left;
-	color: #333;
+	color: #003d8b;
 }
 .header.shop.v3 .topbar .inner-content {
 	border:none;
 	padding: 0;
 }
 .header.shop .list-main li a {
-	color: #333;
+	color: #003d8b;
 }
 .header.shop .list-main li a:hover{
 	color:#fff;
@@ -1275,7 +1275,7 @@ Version:1.0
 	margin-bottom: 0;
 }
 .hero-slider .hero-text p {
-	color: #333;
+	color: #003d8b;
 	margin-bottom: 28px;
 }
 .hero-slider .hero-text .btn {
@@ -1454,7 +1454,7 @@ Version:1.0
 }
 .shop .nice-select {
 	width: 100%;
-	display: ;
+	/* display: ; */
 	margin-top: 4px;
 }
 .shop .view-mode {
@@ -1473,7 +1473,7 @@ Version:1.0
 	width: 100%;
 	display: block;
 	display: inline-block;
-	display: ;
+	/* display: ; */
 }
 .shop .view-mode li a {
 	width: 80px;

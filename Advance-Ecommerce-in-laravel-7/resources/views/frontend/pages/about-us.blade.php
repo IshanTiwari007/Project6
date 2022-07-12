@@ -30,7 +30,7 @@
 							@php
 								$settings=DB::table('settings')->get();
 							@endphp
-							<h3>Welcome To <span>Eshop</span></h3>
+							<h3>Welcome To <span>Imphi</span></h3>
 							<p>@foreach($settings as $data) {{$data->description}} @endforeach</p>
 							<div class="button">
 								<a href="{{route('blog')}}" class="btn">Our Blog</a>
@@ -51,14 +51,78 @@
 	</section>
 	<!-- End About Us -->
 
+	<!-- Header for Services  -->
+	<div class="about-us section" style="padding: 10px 0;margin-top: 25px;">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 col-12">
+					<div class="about-content">
+						<h3>Our <span> Products and Services</span></h3>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End of header for services -->
 
-	<!-- Start Shop Services Area -->
+	<!--  Services  -->
 	<section class="shop-services section">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-3 col-md-6 col-12">
 					<!-- Start Single Service -->
-					<div class="single-service">
+					<div class="single-service custom" style="padding: 20px;">
+						<a href="https://imphi.net/">
+						<h4>&nbsp IMPHI Infotech</h4><br>
+						<img src="{{asset('backend/img/imphi_net.png')}}" alt="imphi_net">
+						</a>
+					</div>
+					<!-- End Single Service -->
+				</div>
+				<div class="col-lg-3 col-md-6 col-12">
+					<!-- Start Single Service -->
+					<div class="single-service custom" style="padding: 20px;">
+						<a href="https://imphi.co/">
+						<h4>&nbsp IMPHI E-mobility</h4><br>
+						<img src="{{asset('backend/img/imphi_co.png')}}" alt="imphi_emobility">
+						</a>
+					</div>
+					<!-- End Single Service -->
+				</div>
+				<div class="col-lg-3 col-md-6 col-12">
+					<!-- Start Single Service -->
+					<div class="single-service custom" style="padding: 20px;">
+						<a href="#">
+						<h4>&nbsp IMPHI Studios</h4><br>
+						<img src="{{asset('backend/img/imphi_net.png')}}" alt="imphi_Studios">
+						</a>
+					</div>
+					<!-- End Single Service -->
+				</div>
+				<div class="col-lg-3 col-md-6 col-12">
+					<!-- Start Single Service -->
+					<div class="single-service custom" style="padding: 20px;">
+						<a href="#">
+						<h4>&nbsp IMPHI Academy</h4><br>
+						<img src="{{asset('backend/img/imphi_net.png')}}" alt="imphi_Academy">
+						</a>
+					</div>
+					<!-- End Single Service -->
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End of Services Area -->
+
+	@include('frontend.layouts.newsletter')
+
+	<!-- Start Shop Services Area -->
+	<section class="shop-services section" style="padding: 10px 0;margin-bottom: 10px;">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-md-6 col-12">
+					<!-- Start Single Service -->
+					<div class="single-service" >
 						<i class="ti-rocket"></i>
 						<h4>Free shiping</h4>
 						<p>Orders over $100</p>
@@ -96,6 +160,17 @@
 		</div>
 	</section>
 	<!-- End Shop Services Area -->
-
-	@include('frontend.layouts.newsletter')
 @endsection
+@push('styles')
+    <style>
+        .custom:hover {
+			border:4px solid #68dfe7;
+			border-radius: 5px;
+			height: 250px;
+			width: 300px;
+		}
+    </style>
+
+@endpush
+
+
