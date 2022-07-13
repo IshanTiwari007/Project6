@@ -27,8 +27,9 @@
 								<li><a href="{{route('about-us')}}">About Us</a></li>
 								<li><a href="#">Faq</a></li>
 								<li><a href="{{route('policy')}}">Privacy Policy</a></li>
+								<li><a href="{{route('delivery')}}">Delivery Policy</a></li>
+								<li><a href="{{route('Terms')}}">Terms and Conditions</a></li>
 								<li><a href="{{route('contact')}}">Contact Us</a></li>
-								<li><a href="#">Help</a></li>
 							</ul>
 						</div>
 						<!-- End Single Widget -->

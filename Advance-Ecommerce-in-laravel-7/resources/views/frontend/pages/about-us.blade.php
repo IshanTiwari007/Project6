@@ -164,7 +164,7 @@
 @push('styles')
     <style>
         .custom:hover {
-			border:4px solid #68dfe7;
+			border:4px solid #448aff;
 			border-radius: 5px;
 			height: 250px;
 			width: 300px;

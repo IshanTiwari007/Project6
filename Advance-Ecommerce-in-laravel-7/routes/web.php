@@ -40,6 +40,8 @@ Route::get('/product-cat/{slug}','FrontendController@productCat')->name('product
 Route::get('/product-sub-cat/{slug}/{sub_slug}','FrontendController@productSubCat')->name('product-sub-cat');
 Route::get('/product-brand/{slug}','FrontendController@productBrand')->name('product-brand');
 Route::get('/policy','FrontendController@policy')->name('policy');
+Route::get('/delivery','FrontendController@delivery')->name('delivery');
+Route::get('/Terms','FrontendController@Terms')->name('Terms');
 // Cart section
 Route::get('/add-to-cart/{slug}','CartController@addToCart')->name('add-to-cart')->middleware('user');
 Route::post('/add-to-cart','CartController@singleAddToCart')->name('single-add-to-cart')->middleware('user');

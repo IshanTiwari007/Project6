@@ -425,5 +425,11 @@ class FrontendController extends Controller
     public function policy(){
         return view('frontend.pages.policy');
     }
+    public function delivery(){
+        return view('frontend.pages.delivery');
+    }
+    public function Terms(){
+        return view('frontend.pages.Terms');
+    }
     
 }

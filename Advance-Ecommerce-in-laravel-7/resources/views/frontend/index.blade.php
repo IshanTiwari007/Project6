@@ -47,7 +47,7 @@
                     @if($cat->is_parent==1)
                         <!-- Single Banner  -->
                         <div class="col-lg-4 col-md-6 col-12">
-                            <div class="single-banner">
+                            <div class="single-banner overlay">
                                 @if($cat->photo)
                                     <img src="{{$cat->photo}}" alt="{{$cat->photo}}">
                                 @else
@@ -555,6 +555,22 @@
 
         #Gslider .carousel-indicators {
         bottom: 70px;
+        }
+
+        .overlay::before{
+            z-index: 1;
+        }
+
+        .small-banner .single-banner .content{
+            z-index: 2;
+        }
+        .small-banner .single-banner h3{
+            color: #fff;
+        }
+
+        .small-banner .single-banner a{
+            color: #fff;
+            border-bottom: 2px solid #fff;
         }
     </style>
 @endpush
